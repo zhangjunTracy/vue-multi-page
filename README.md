@@ -3,6 +3,7 @@
 > A Vue.js project
 
 ## Build Setup
+~~删除线~~
 
 ``` bash
 # install dependencies
