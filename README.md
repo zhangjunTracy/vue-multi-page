@@ -19,7 +19,7 @@
 		
 		```
   		// glob模块，用于读取webpack入口目录文件
-      // 看到issue中有人问glob模块，这个是需要npm安装的，https://github.com/isaacs/node-glob
+      // 看到issue中有人问glob模块，这个是需要npm安装的，[https://github.com/isaacs/node-glob](https://github.com/isaacs/node-glob)
       var glob = require('glob');
     ```
 		
