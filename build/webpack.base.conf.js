@@ -4,6 +4,7 @@ var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
 
 let en = utils.getEntries('./src/module/**/*.js')
+// 网站首页
 en['index'] = './src/module/about/about.js'
 console.info(en)
 console.log('==================================')
