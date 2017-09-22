@@ -3,9 +3,13 @@ var config = require('../config')
 var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
 
+let en = utils.getEntries('./src/module/**/*.js')
+en['index'] = './src/module/about/about.js'
+console.info(en)
+console.log('==================================')
 module.exports = {
   // 获取多入口, 注意这个路径， 至于为什么是 ./src仍然需要了解，我觉得应该是 ../src
-  entry: utils.getEntries('./src/module/**/*.js'),
+  entry: en,
   output: {
     path: config.build.assetsRoot,
     publicPath: process.env.NODE_ENV === 'production' ? config.build.assetsPublicPath : config.dev.assetsPublicPath,
